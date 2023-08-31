@@ -13,7 +13,7 @@ app.get('/api/games', cors(corsOptions), async (req, res) => {
     const data = await response.json()
 
     res.json(data)
-    console.log('Запрос обработан')
+    console.log('Запрос на получение массива игр обработан')
   } catch (error) {
     console.error(error)
     res.status(500).json({ message: 'Internal server error' })
